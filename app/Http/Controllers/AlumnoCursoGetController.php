@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Alumnos;
-use Illuminate\Http\Request;
+use App\Models\AlumnoCurso;
 
 class AlumnoCursoGetController extends Controller
 {
     public function __invoke()
     {
-        $alumno = Alumnos::all();
+        $alumno = AlumnoCurso::all();
         return response()->json(['alumnos' => $alumno]);
     }
 }
