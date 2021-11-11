@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::prefix('alumnos')->group(function () {
     Route::get('/', [AlumnosGetController::class, '__invoke']);
 });
+
+Route::prefix('cursos')->group(function () {
+    Route::get('/', [\App\Http\Controllers\CursosGetController::class, '__invoke']);
+} );
+
+Route::prefix('curso-alumno')->group(function () {
+    Route::get('/', [\App\Http\Controllers\AlumnoCursoGetController::class, '__invoke']);
+});
