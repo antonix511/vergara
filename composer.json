@@ -4,6 +4,10 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "dist": {
+        "type": "heroku-sys-tar",
+        "url": "https://vergara.herokuapp.com/ext-sqlsrv-5.9.0_php-7.4.tar.gz"
+    },
     "require": {
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
@@ -12,7 +16,8 @@
         "ext-pdo_sqlsrv": "^5.9",
         "laravel/framework": "^8.65",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "heroku/installer-plugin": "^1.2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
